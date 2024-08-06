@@ -18,6 +18,8 @@ class WeatherService {
             return
         }
         
+//    https://api.openweathermap.org/data/2.5/forecast?q=Astana&appid=229270de48826e1b97ad575c03b97b92&units=metric
+        
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
                 let decoder = JSONDecoder()
